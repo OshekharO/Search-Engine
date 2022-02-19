@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Book Search Engine</title>
+
+	<!-- Favicon Import -->
+	<link rel="icon" type="text/css" href="img/favicon.png">
+	<link id="favicon" rel="shortcut icon" href="img/favicon.png">
+
+	<!-- CSS Import -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Share/Embed Content -->
+	<meta property="og:url" content="http://ravesbooksearch.com" />
+	<meta property="og:type" content="search-page" />
+	<meta property="og:title" content="Book Search Engine" />
+	<meta property="og:description" content="Find the safest free download links to your favorite books" />
+	<meta property="og:image" content="https://ravebooksearch.com/img/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- No Javascript Warning -->
+	<noscript> 
+		<div id="noscript-warning">Book Search uses Javascript to provide its search results. Kindly enable Javascript on your browser and reload the page to restore usability.</div>
+	</noscript>
+
+<body>
+
+<!-- Preloader -->
+	<div class="preloader_bg">
+		<div class="preloader"></div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		setTimeout(function(){
+			$('.preloader_bg').fadeToggle();
+		}, 1500);
+	</script>
+
+<!-- Slideout Menu -->
+	<input type="checkbox" id="slide" name="" value=""/>
+	<div class="container">
+		<label for="slide" class="toggle">☰</label>
+		<nav class="sidebar">
+			<ul>
+				<img src="img/favicon.png" onclick="location.href='index.html';">
+				<h5 id="foundcounterno" class="count">0</h5>
+				<h5 id="foundcounter">Books Found</h5>
+				<h4>Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script><br>IdleEndeavor</h4>
+			</ul>
+		</nav>
+	</div>
+
+<!-- Search Box -->
+	<div class="maindiv">
+		<div class="searchlogo">
+			<img class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
+		</div>
+		<div class="switcherdiv">
+			<button class="switcher" id="active" onclick="location.href='index.html'"title="eBook Search">eBooks</button>
+			<button class="switcher" onclick="location.href='index-audiobooks.html'" title="Switch to Audiobook Search">Audiobooks</button>
+		</div>
+		<script>
+			(function() {
+			var cx = "001315572920893299880:mcnnf1udq8e";
+			var gcse = document.createElement("script");
+			gcse.type = "text/javascript";
+			gcse.async = true;
+			gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(gcse, s);
+			})();
+			window.onload = function()
+			{ 
+			var searchBox =  document.getElementById("gsc-i-id1");
+			searchBox.placeholder="Search for your favourite Books";
+			searchBox.title="Rave Book Search Engine"; 
+			}
+		</script>
+		<gcse:search class="searchbox"></gcse:search>  
+		
+	</div>
+        
+<!-- FAB Wheel -->
+	<div class="adminActions">
+		<input type="checkbox" name="adminToggle" class="adminToggle" />
+		<a class="adminButton" href="#!"><i class="material-icons">lightbulb</i></a>
+		<div class="adminButtons">
+			<a href="https://github.com/OshekharO/Search-Engine" title="GitHub"><i class="material-icons">code</i></a>
+		</div>
+	</div>
+
+<!-- Engine Switcher -->
+	<nav class="nav">
+	  <a href="#" class="navlink">
+	    <i class="material-icons nav__icon">videogame_asset</i>
+	    <span class="navtext">Game Search</span>
+	  </a>
+	  <a href="#" class="navlink navlinkactive">
+	    <i class="material-icons nav__icon">library_books</i>
+	    <span class="navtext">Book Search</span>
+	  </a>
+	  <a href="#" class="navlink">
+	    <i class="material-icons navicon">wysiwyg</i>
+	    <span class="navtext">Software Search</span>
+	  </a>
+	</nav>
+
+</body>
+
+</html>
