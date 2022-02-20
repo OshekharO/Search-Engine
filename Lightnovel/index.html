@@ -22,32 +22,6 @@
     <div id="noscript-warning">Light Novel Search uses Javascript to provide its search results. Kindly enable Javascript on your browser and reload the page to restore usability.</div>
   </noscript>
   <body>
-  <div class="wrapper">
-    <img src="#" alt="">
-    <div class="content">
-      <header>Cookies Consent</header>
-      <p>This website use cookies to ensure you get the best experience on our website.</p>
-      <div class="buttons">
-        <button class="item">I understand</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    const cookieBox = document.querySelector(".wrapper"),
-    acceptBtn = cookieBox.querySelector("button");
-    acceptBtn.onclick = ()=>{
-      //setting cookie for 1 month, after one month it'll be expired automatically
-      document.cookie = "CookieBy=OshekharO; max-age="+60*60*24*30;
-      if(document.cookie){ //if cookie is set
-        cookieBox.classList.add("hide"); //hide cookie box
-      }else{ //if cookie not set then alert an error
-        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-      }
-    }
-    let checkCookie = document.cookie.indexOf("CookieBy=OshekharO"); //checking our cookie
-    //if cookie is set then hide the cookie box else show it
-    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Search Box -->
     <div class="maindiv">
