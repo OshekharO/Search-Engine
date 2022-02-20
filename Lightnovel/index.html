@@ -4,43 +4,33 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Light Novel Search</title>
+	<title>Lightnovel Search Engine</title>
 
 	<!-- Favicon Import -->
-	<link rel="icon" type="text/css" href="img/favicon.png">
-	<link id="favicon" rel="shortcut icon" href="img/favicon.png">
+	<link rel="icon" type="text/css" href="https://img.icons8.com/ios-filled/100/000000/search-pain.png">
+	<link id="favicon" rel="shortcut icon" href="https://img.icons8.com/ios-filled/100/000000/search-pain.png">
 
 	<!-- CSS Import -->
-	<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/OshekharO/Search-Engine/main/gamesearch/css/index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Share/Embed Content -->
-	<meta property="og:url" content="http://ravesgamesearch.pages.dev" />
+	<meta property="og:url" content="https://connectvip.eu.org" />
 	<meta property="og:type" content="search-page" />
 	<meta property="og:title" content="Rave Game Search Engine" />
-	<meta property="og:description" content="Find the safest free download links to your favorite games" />
-	<meta property="og:image" content="https://ravegamesearch.pages.dev/img/favicon.png" />
+	<meta property="og:description" content="Find the safest free links to your favorite lightnovel" />
+	<meta property="og:image" content="https://img.icons8.com/ios-filled/100/000000/search-pain.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <!-- No Javascript Warning -->
 	<noscript> 
-		<div id="noscript-warning">Game Search uses Javascript to provide its search results. Kindly enable Javascript on your browser and reload the page to restore usability.</div>
+		<div id="noscript-warning">Light Novel Search uses Javascript to provide its search results. Kindly enable Javascript on your browser and reload the page to restore usability.</div>
 	</noscript>
 
 <body>
 
-<!-- Preloader -->
-	<div class="preloader_bg">
-		<div class="preloader"></div>
-	</div>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		setTimeout(function(){
-			$('.preloader_bg').fadeToggle();
-		}, 1500);
-	</script>
 
 <!-- Slideout Menu -->
 	<input type="checkbox" id="slide" name="" value=""/>
@@ -70,7 +60,7 @@
 <!-- Search Box -->
 	<div class="maindiv">
 		<div class="searchlogo">
-			<img class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
+			<img class="searchlogo" src="https://readlightnovels.net/wp-content/uploads/2020/01/rln-logo-ret.png" onclick="location.href='index.html';">
 		</div>
 		<script>
 			(function() {
@@ -86,7 +76,7 @@
 			{ 
 			var searchBox =  document.getElementById("gsc-i-id1");
 			searchBox.placeholder="Search for your favourite Games";
-			searchBox.title="Game Search Engine"; 
+			searchBox.title="Rave Game Search Engine"; 
 			}
 		</script>
 		<gcse:search class="searchbox"></gcse:search>  
@@ -98,25 +88,10 @@
 		<input type="checkbox" name="adminToggle" class="adminToggle" />
 		<a class="adminButton" href="#!"><i class="material-icons">lightbulb</i></a>
 		<div class="adminButtons">
-			<a href="https://github.com/OshekharO/Search-Engine" title="GitHub"><i class="material-icons">Owner</i></a>
-			</div>
+			<a href="https://github.com/OshekharO/Search-Engine" title="GitHub"><i class="material-icons">code</i></a>
+		</div>
 	</div>
 
-<!-- Engine Switcher -->
-	<nav class="nav">
-	  <a href="#" class="nav__link nav__link--active">
-	    <i class="material-icons nav__icon">videogame_asset</i>
-	    <span class="nav__text">Game Search</span>
-	  </a>
-	  <a href="#" class="nav__link">
-	    <i class="material-icons nav__icon">library_books</i>
-	    <span class="nav__text">Book Search</span>
-	  </a>
-	  <a href="#" class="nav__link">
-	    <i class="material-icons nav__icon">wysiwyg</i>
-	    <span class="nav__text">Software Search</span>
-	  </a>
-	</nav>
 
 </body>
 
