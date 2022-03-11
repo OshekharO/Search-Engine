@@ -9,8 +9,9 @@ I am not liable for any harm caused by this
 1. https://www.freehostia.com
 2. https://infinityfree.net
 3. https://pages.cloudflare.com
+4. https://pages.github.com
 
-We are not liable for any kind of copyright infringement.
+I are not liable for any kind of copyright infringement.
 
 ## 🤝 Special Thanks & Credits
 
