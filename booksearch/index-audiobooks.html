@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Rave AudioBook Search Engine</title>
+	<title>AudioBook Search Engine</title>
 
 	<!-- Favicon Import -->
 	<link rel="icon" type="text/css" href="img/favicon.png">
@@ -31,42 +31,8 @@
 
 <body>
 
-<!-- Preloader -->
-	<div class="preloader_bg">
-		<div class="preloader"></div>
-	</div>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		setTimeout(function(){
-			$('.preloader_bg').fadeToggle();
-		}, 1500);
-	</script>
 
-<!-- Slideout Menu -->
-	<input type="checkbox" id="slide" name="" value=""/>
-	<div class="container">
-		<label for="slide" class="toggle">☰</label>
-		<nav class="sidebar">
-			<ul>
-				<img src="img/favicon.png" onclick="location.href='index.html';">
-				<h5 id="foundcounterno" class="count">0</h5>
-				<h5 id="foundcounter">Books Found</h5>
-				<h4>Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script><br>OshekharO</h4>
-			</ul>
-		</nav>
-	</div>
-	<script type="text/javascript">
-		function updateCounter() {
-		    fetch('https://api.countapi.xyz/update/ravebooksearch/ravebooksearch/?amount=1')
-		        .then(res => res.json())
-		        .then(data => counterElement.innerHTML = data.value)
-		}
-
-		updateCounter()
-
-		counterElement = document.getElementsByClassName('count')[0];
-	</script>
 <!-- Search Box -->
 	<div class="maindiv">
 		<div class="searchlogo">
@@ -95,15 +61,6 @@
 		</script>
 		<gcse:search class="searchbox"></gcse:search>  
 		
-	</div>
-        
-<!-- FAB Wheel -->
-	<div class="adminActions">
-		<input type="checkbox" name="adminToggle" class="adminToggle" />
-		<a class="adminButton" href="#!"><i class="material-icons">lightbulb</i></a>
-		<div class="adminButtons">
-			<a href="https://github.com/IdleEndeavor/booksearch" title="GitHub"><i class="material-icons">code</i></a>
-                </div>
 	</div>
 
 <!-- Engine Switcher -->
