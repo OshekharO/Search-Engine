@@ -1,78 +1,73 @@
-<!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Software Search Engine</title>
+    <title>Software Search</title>
 
-	<!-- Favicon Import -->
-	<link rel="icon" type="text/css" href="img/favicon.png">
-	<link id="favicon" rel="shortcut icon" href="img/favicon.png">
-
-	<!-- CSS Import -->
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!-- Share/Embed Content -->
-	<meta property="og:url" content="http://ravesoftwaresearch.pages.dev" />
-	<meta property="og:type" content="search-page" />
-	<meta property="og:title" content="Rave Software Search Engine" />
-	<meta property="og:description" content="Find the safest free download links to your favorite software and apps" />
-	<meta property="og:image" content="https://ravesoftwaresearch.pages.dev/img/favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="twitter:title" content="Rave Software Search">
+    <meta property="og:title" content="Rave Software Search">
+    <meta property="twitter:card" content="Find the safest free download links to your favorite Software">
+    <meta property="twitter:description" content="Find the safest free download links to your favorite Software">
+    <meta property="og:description" content="Find the safest free download links to your favorite Software">
+    <meta property="twitter:image" content="#">
+    <meta property="og:image" content="#">
+    <meta property="description" content="Find the safest free download links to your favorite Software">
+    <link href="img/favicon.png" rel="shortcut icon">
 </head>
-
-<!-- No Javascript Warning -->
-	<noscript> 
-		<div id="noscript-warning">Rave Software Search uses Javascript to provide its search results. Kindly enable Javascript on your browser and reload the page to restore usability.</div>
-	</noscript>
 <body>
+    <div class="container">
+        <!-- Engine Switcher -->
+        <div class="engine-swticher">
+            <a href="#">Game Search</a>
+            <a href="#">Book Search</a>
+            <a href="#">> Software Search</a>
+        </div>
+        <!-- Search Box -->
+        <div class="maindiv">
+            <div class="searchlogo">
+                <img class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
+            </div>
+            <script>
+                (function() {
+                var cx = "053febb44dc0943a1";
+                var gcse = document.createElement("script");
+                gcse.type = "text/javascript";
+                gcse.async = true;
+                gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(gcse, s);
+                })();
+                window.onload = function()
+                { 
+                var searchBox =  document.getElementById("gsc-i-id1");
+                searchBox.placeholder="Search for your favourite Software";
+                searchBox.title="Software Search Engine"; 
+                }
+            </script>
+            <gcse:search class="searchbox"></gcse:search>
+        </div>
+    </div>
+    <!-- Terms of Use, Privacy Policy and GitHub Link -->
+    <div class="terms">
+        <a href="#">GitHub |</a>
+        <a href="#">Privacy Policy |</a>
+        <a href="#">Terms of Use</a>
+    </div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Search Box -->
-	<div class="maindiv">
-		<div class="searchlogo">
-			<img class="searchlogo" src="img/search-logo.png" onclick="location.href='index.html';">
+    <!-- FAB Wheel -->
+	<div class="adminActions">
+		<input type="checkbox" name="adminToggle" class="adminToggle" />
+		<a class="adminButton" href="#!"><i class="material-icons">lightbulb</i></a>
+		<div class="adminButtons">
+			<a href="#" title="GitHub"><i class="material-icons">code</i></a>
+			<a href="#" title="Terms"><i class="material-icons">gavel</i></a>
+			<a href="#" title="Privacy"><i class="material-icons">security</i></a>
 		</div>
-		<script>
-			(function() {
-			var cx = "053febb44dc0943a1";
-			var gcse = document.createElement("script");
-			gcse.type = "text/javascript";
-			gcse.async = true;
-			gcse.src = "https://cse.google.com/cse.js?cx=" + cx;
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(gcse, s);
-			})();
-			window.onload = function()
-			{ 
-			var searchBox =  document.getElementById("gsc-i-id1");
-			searchBox.placeholder="Search for your favourite Software";
-			searchBox.title="Software Search Engine"; 
-			}
-		</script>
-		<gcse:search class="searchbox"></gcse:search>  
-		
 	</div>
-
-<!-- Engine Switcher -->
-	<nav class="nav">
-	  <a href="#" class="nav__link">
-	    <i class="material-icons nav__icon">videogame_asset</i>
-	    <span class="nav__text">Game Search</span>
-	  </a>
-	  <a href="#" class="nav__link">
-	    <i class="material-icons nav__icon">library_books</i>
-	    <span class="nav__text">Book Search</span>
-	  </a>
-	  <a href="#" class="nav__link nav__link--active">
-	    <i class="material-icons nav__icon">wysiwyg</i>
-	    <span class="nav__text">Software Search</span>
-	  </a>
-	</nav>
-
 </body>
-
 </html>
