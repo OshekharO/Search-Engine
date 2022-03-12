@@ -285,21 +285,18 @@ html, body {
 
 /* Engine Switcher */
   .nav {
-    position: absolute;
-    top: 15px;
-    width: 100%;
-    height: 55px;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  justify-content: center;
   }
 
   .nav__link {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-basis: 150px;
-    overflow: hidden;
+  text-align: center;
+  padding: 14px 16px;
+  overflow: hidden;
     white-space: nowrap;
     font-size: 14px;
     color: white;
