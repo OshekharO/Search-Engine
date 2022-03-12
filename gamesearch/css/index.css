@@ -283,39 +283,6 @@ html, body {
     background-color: red;
   }
 
-/* Engine Switcher */
-  .nav {
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  justify-content: center;
-  }
-
-  .nav__link {
-  text-align: center;
-  padding: 14px 16px;
-  overflow: hidden;
-    white-space: nowrap;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .nav__link:hover {
-    color: #F63F4D;
-  }
-
-  .nav__link--active {
-    color: #F63F4D;
-  }
-
-  .nav__icon {
-    font-size: 20px;
-  }
-
 @media (max-width: 500px) {
   .maindiv {
     margin: auto;
@@ -327,9 +294,4 @@ html, body {
 
   .maindiv img {
     max-width: 75%;
-  }
-
-  .nav {
-    top: unset;
-    bottom: 0px;
   }
