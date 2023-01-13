@@ -11,7 +11,7 @@ I am not liable for any harm caused by this
 3. https://pages.cloudflare.com
 4. https://pages.github.com
 
-I are not liable for any kind of copyright infringement.
+I am not liable for any kind of copyright infringement.
 
 ## 🤝 Special Thanks & Credits
 
@@ -32,6 +32,6 @@ I are not liable for any kind of copyright infringement.
 • For any Support About Script contact [@OshekherO](https://t.me/OshekherO) at Telegram <br>
 
 ---
-<h4 align='center'>© 2022 ツ ѕнєкнєя</h4>
+<h4 align='center'>© 2023 ツ ѕнєкнєя</h4>
 
 <!-- DO NOT REMOVE THIS CREDIT 🤬 🤬 -->
