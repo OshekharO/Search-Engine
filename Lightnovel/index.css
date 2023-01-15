@@ -96,6 +96,12 @@ html, body {
 
   .gs-webResult {
     padding: 1.5em;
+    background: rgba(0, 0, 0, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.7px);
+    -webkit-backdrop-filter: blur(14.7px);
+    border: 1px solid rgba(0, 0, 0, 1);
   }
 
   .gsc-thumbnail {
