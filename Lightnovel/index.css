@@ -12,6 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #121212;
+  scroll-behavior: smooth;
   height: 100%;
   font-family: Roboto;
 }
@@ -19,19 +20,11 @@ html, body {
 .maindiv {
   margin: auto;
   position: relative;
+  scroll-behavior: smooth;
   text-align: left;
-  top: 25%;
-  width: 50%;
+  top: 2%;
+  width: 80%;
 }
-
-.maindiv img {
-  max-width: 50%;
-}
-
-.searchlogo {
-  text-align: center;
-}
-
 /* Search Box */
   .searchbox {
     width: 60%;
@@ -42,15 +35,6 @@ html, body {
     padding-top: 150px;
     width: 60%;
     margin: 0 auto 0 auto;
-    animation: slidein 0.3s ease;
-  }
-
-  .search img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: auto;
-    margin-bottom: -30px;
     animation: slidein 0.3s ease;
   }
 
@@ -96,11 +80,9 @@ html, body {
 
   .gs-webResult {
     padding: 1.5em;
-    background: rgba(0, 0, 0, 0.23);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(14.7px);
-    -webkit-backdrop-filter: blur(14.7px);
+    background-image: linear-gradient(90deg, rgba(83,105,118,1) 0%, rgba(41,46,73,1) 100%);
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 0px rgb(0 255 117 / 90%);
     border: 1px solid rgba(0, 0, 0, 1);
   }
 
@@ -122,10 +104,6 @@ html, body {
   }
 
   .gcsc-more-maybe-branding-root {
-    display: none;
-  }
-
-  .gsc-orderby {
     display: none;
   }
 
@@ -306,7 +284,6 @@ html, body {
     transition: 0.5s;
   }
 
-
   #slide {
     display: none; 
   }
@@ -333,10 +310,7 @@ html, body {
     margin: auto;
     position: relative;
     text-align: left;
-    top: 25%;
+    top: 2%;
     width: 100%;
   }
-
-  .maindiv img {
-    max-width: 75%;
-  }
+}
