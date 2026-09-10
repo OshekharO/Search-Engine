@@ -288,6 +288,16 @@
         let currentPage = 1;
         let searchHistory = [];
 
+
+        function escapeHtml(str) {
+            if (str === null || str === undefined) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
         // DOM Elements
         const searchForm = document.getElementById('searchForm');
         const searchInput = document.getElementById('searchInput');
@@ -346,7 +356,7 @@
                     const historyItem = document.createElement('div');
                     historyItem.className = 'flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors cursor-pointer';
                     historyItem.innerHTML = `
-                        <span class="text-sm text-gray-700 dark:text-gray-300">${query}</span>
+                        <span class="text-sm text-gray-700 dark:text-gray-300">${escapeHtml(query)}</span>
                         <i class="fas fa-search text-primary-500 text-xs"></i>
                     `;
                     historyItem.addEventListener('click', () => {
@@ -443,12 +453,12 @@
                             <i class="fas fa-link text-primary-600 dark:text-primary-400 text-sm"></i>
                         </div>
                         <div class="flex-1 min-w-0">
-                            <a href="${item.link}" target="_blank" rel="noopener noreferrer" 
+                            <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer"
                                class="text-lg font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 hover:underline line-clamp-1 block mb-1">
-                                ${item.title}
+                                ${escapeHtml(item.title)}
                             </a>
-                            <div class="text-sm text-green-600 dark:text-green-400 mb-2">${item.displayLink}</div>
-                            <p class="text-gray-600 dark:text-gray-400 line-clamp-2">${item.snippet}</p>
+                            <div class="text-sm text-green-600 dark:text-green-400 mb-2">${escapeHtml(item.displayLink)}</div>
+                            <p class="text-gray-600 dark:text-gray-400 line-clamp-2">${escapeHtml(item.snippet)}</p>
                         </div>
                     </div>
                 `;
